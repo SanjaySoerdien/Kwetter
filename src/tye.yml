@@ -1,0 +1,11 @@
+name: Kwetter
+registry: sanjaysoerdien
+services:
+- name: tweet-service
+  project: Services\Tweet\Tweet.API\Tweet.API.csproj
+  bindings:
+    - port: 5000
+- name: blazor-wasm
+  project: Web\KwetterWeb\KwetterWeb.BlazorWASM\KwetterWeb.BlazorWASM.csproj
+  bindings:
+    - port: 5005
